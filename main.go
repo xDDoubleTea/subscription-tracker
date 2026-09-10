@@ -29,7 +29,6 @@ func main() {
 			if err := core.Add(); err != nil {
 				fmt.Println(err.Error())
 			}
-
 		case "ls":
 			fmt.Println()
 			fmt.Println("------Subscriptions------")
@@ -42,7 +41,6 @@ func main() {
 			if err := core.U(); err != nil {
 				fmt.Println(err.Error())
 			}
-
 		case "get":
 			if err := core.Get(); err != nil {
 				fmt.Println(err.Error())
@@ -51,7 +49,6 @@ func main() {
 			if err := core.Rm(); err != nil {
 				fmt.Println(err.Error())
 			}
-
 		case "q":
 			return
 		default:
